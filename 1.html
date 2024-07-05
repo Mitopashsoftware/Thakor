@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Thakor</title>
+    <link rel="stylesheet" href="Main.css">
+
+    </head>
+    <body>
+        
+    </body>
+    </html>
+    <body>
+        <!-- <button onclick="myFunction()">Try It</button> -->
+       <h1 style="font-size: 40px; text-align: center ;  color:black; font-family: cursive; background-color:darkseagreen"> Thakor PariVar</h1>
+        <p id="demo" style="font-size: 20px; text-align: center ;  color:black; font-family: cursive; background-color:darkseagreen" ></p></h1>
+        <!-- <p id="demo1" style="font-size: 20px; text-align: center; color:black; font-family: cursive; background-color:whitesmoke"></p>
+        <p id="demo2" style="font-size: 20px; text-align: center; color:black; font-family: cursive; background-color:darkseagreen"></p> -->
+        <!-- <button onclick="myfunction()">Try it</button> -->
+       
+        <script>
+            let x = "";
+const myObj = {
+  name: "John",
+  age: 30,
+  Thakor: [
+    {name:"Hari sinh", models:["Jay sinh", "Chetan sinh"]},
+    {name:"Jay Shinh", models:["Ashok Sinh", "Saku Ben", "Sailendra Sinh","Gaytri Ben","Rajendra Sinh"]},
+    {name:"Chetan sinh", models:["Devendra Sinh","Vijay Sinh"]}
+  ]
+}
+
+for (let i in myObj.Thakor) {
+  x += "<h2>" + myObj.Thakor[i].name + "</h2>";
+  for (let j in myObj.Thakor[i].models) {
+    x += myObj.Thakor[i].models[j] + "<br>";
+  }
+}
+
+document.getElementById("demo").innerHTML = x;
+
+        </script>
+    </body>
+
+</html> 
